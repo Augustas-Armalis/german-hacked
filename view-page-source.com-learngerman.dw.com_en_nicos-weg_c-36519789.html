@@ -1755,14 +1755,36 @@
                           <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
                             title="Very well finished" style="height: 16px; width: 16px;">
 
-                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;"><span class="good"
-                              style="color: rgb(99, 222, 157); font-size: 0.83rem;     line-height: 1.1;">31</span><span
-                              style="font-size: 0.83rem;
-                              color: rgb(92, 113, 138);
-                              line-height: 1.1;">/</span><span style="font-size: 0.83rem;
-    color: rgb(92, 113, 138);
-    line-height: 1.1;">35</span>
-                          </div>
+                            <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                              <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                              <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                              <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
+                            </div>
+                          
+                            <script>
+                              // Ensure the script runs after the page has fully loaded
+                              document.addEventListener('DOMContentLoaded', function () {
+                                // Function to generate a random number between min and max
+                                function getRandomNumber(min, max) {
+                                  return Math.floor(Math.random() * (max - min + 1)) + min;
+                                }
+                            
+                                // Get all elements that match the class 'progress'
+                                const pointsSets = document.querySelectorAll('.progress .sc-iCnXOK.jzJGdI.sc-gCkVGe.diBXRP');
+                            
+                                pointsSets.forEach(set => {
+                                  // Generate the random "out of points" number between 35 and 56
+                                  const outOfPoints = getRandomNumber(35, 56);
+                            
+                                  // Generate the random points value between (outOfPoints - 7) and outOfPoints
+                                  const points = getRandomNumber(outOfPoints - 7, outOfPoints);
+                            
+                                  // Update the corresponding HTML elements within this set
+                                  set.querySelector('.randomPoints').innerText = points;
+                                  set.querySelector('.outOfPoints').innerText = outOfPoints;
+                                });
+                              });
+                            </script>
 
                           <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
                             data-testid="progressResetButton"><span>Reset</span></button>
@@ -1778,9 +1800,24 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          
+                          
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
+
+
+
+
+
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/tschüss/l-37251033">
@@ -1789,9 +1826,20 @@
                             goodbye</span><span class="sc-jrrXlR fSbdAW categories">Informal and formal</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                         
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
+
+
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/von-a-bis-z/l-37256418">
@@ -1801,9 +1849,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -1818,7 +1874,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ich-heiße-emma/l-37262882">
                         <div class="content">
@@ -1827,9 +1883,17 @@
                             class="sc-jrrXlR fSbdAW categories">Personal pronouns: ich, du</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/das-ist-nico/l-37262923">
@@ -1839,9 +1903,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/woher-kommst-du/l-37263828">
@@ -1851,9 +1923,17 @@
                             class="sc-jrrXlR fSbdAW categories">Conjugation: present tense</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/nico-hat-ein-problem/l-37265543">
@@ -1863,9 +1943,17 @@
                             class="sc-jrrXlR fSbdAW categories">Personal pronouns: er, sie</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -1880,7 +1968,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/zahlen-von-1-bis-100/l-37265621">
                         <div class="content">
@@ -1889,9 +1977,17 @@
                             class="sc-jrrXlR fSbdAW categories">Numbers from 11 to 19</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wichtige-nummern/l-37269501">
@@ -1901,9 +1997,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/adressen/l-37269671">
@@ -1913,9 +2017,17 @@
                             class="sc-jrrXlR fSbdAW categories">W-questions</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/auf-dem-amt/l-37269629">
@@ -1925,9 +2037,17 @@
                             class="sc-jrrXlR fSbdAW categories">Numbers over 100</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+                          <img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -1942,7 +2062,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/was-machst-du-hier/l-37278679">
                         <div class="content">
@@ -1951,9 +2071,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/was-trinkst-du/l-37279418">
@@ -1963,9 +2091,17 @@
                             class="sc-jrrXlR fSbdAW categories">Nouns: gender</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/eine-pizza-bitte/l-37279261">
@@ -1975,9 +2111,17 @@
                             class="sc-jrrXlR fSbdAW categories">Vowel change: e to i</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/zahlen-bitte/l-37280348">
@@ -1987,9 +2131,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2004,7 +2156,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ich-war-schon-in-berlin/l-37325550">
                         <div class="content">
@@ -2013,9 +2165,17 @@
                             class="sc-jrrXlR fSbdAW categories">Simple past: sein</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wo-liegt-das/l-37337877">
@@ -2025,9 +2185,17 @@
                             class="sc-jrrXlR fSbdAW categories">Questions and statements</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/in-europa/l-37328492">
@@ -2037,9 +2205,17 @@
                             class="sc-jrrXlR fSbdAW categories">Indefinite pronouns: man</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/andere-länder/l-37337244">
@@ -2049,9 +2225,17 @@
                             class="sc-jrrXlR fSbdAW categories">Conjugation: sprechen</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2066,7 +2250,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/was-ist-das/l-37368285">
                         <div class="content">
@@ -2075,9 +2259,17 @@
                             class="sc-jrrXlR fSbdAW categories">Articles: definite</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wem-gehört-das/l-37372077">
@@ -2087,9 +2279,17 @@
                             class="sc-jrrXlR fSbdAW categories">Articles: indefinite</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ich-habe-kein/l-37382992">
@@ -2099,9 +2299,17 @@
                             class="sc-jrrXlR fSbdAW categories">Sentence construction: subject</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/das-auto-ist-rot/l-37401537">
@@ -2111,9 +2319,17 @@
                             class="sc-jrrXlR fSbdAW categories">Adjectives following &quot;sein&quot;</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2128,7 +2344,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/so-wohne-ich/l-37425145">
                         <div class="content">
@@ -2137,9 +2353,17 @@
                             class="sc-jrrXlR fSbdAW categories">Articles</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/meine-wohnung/l-37425763">
@@ -2149,9 +2373,17 @@
                             class="sc-jrrXlR fSbdAW categories">Negatives: nicht</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/sofa-sessel-und-tisch/l-37438475">
@@ -2161,9 +2393,17 @@
                             class="sc-jrrXlR fSbdAW categories">zu + adjective</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/unser-haus/l-37439097">
@@ -2173,9 +2413,17 @@
                             class="sc-jrrXlR fSbdAW categories">Possessive determiners</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2190,7 +2438,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/emmas-tag/l-37442425">
                         <div class="content">
@@ -2199,9 +2447,17 @@
                             class="sc-jrrXlR fSbdAW categories">Time: 12-hour clock</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/tageszeiten/l-37445884">
@@ -2211,9 +2467,17 @@
                             class="sc-jrrXlR fSbdAW categories">Separable verbs</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/am-sonntag-koche-ich/l-37452061">
@@ -2223,9 +2487,17 @@
                             class="sc-jrrXlR fSbdAW categories">Prepositions: an</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/emmas-wochenende/l-37452629">
@@ -2235,9 +2507,17 @@
                             class="sc-jrrXlR fSbdAW categories">Adverbs: sequence</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2252,7 +2532,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wie-spät-ist-es/l-37453621">
                         <div class="content">
@@ -2261,9 +2541,17 @@
                             class="sc-jrrXlR fSbdAW categories">Time specification: 24-hour clock</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/hast-du-morgen-zeit/l-37461035">
@@ -2273,9 +2561,17 @@
                             class="sc-jrrXlR fSbdAW categories">Ordinal numbers</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wann-spielen-wir/l-37468614">
@@ -2285,9 +2581,17 @@
                             class="sc-jrrXlR fSbdAW categories">Conjugation: können</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/zu-spät/l-37460778">
@@ -2297,9 +2601,17 @@
                             class="sc-jrrXlR fSbdAW categories">Simple past: haben</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2314,7 +2626,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ich-bin-lehrerin/l-37469204">
                         <div class="content">
@@ -2323,9 +2635,17 @@
                             class="sc-jrrXlR fSbdAW categories">Word formation: professions</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/mein-beruf/l-37475138">
@@ -2335,9 +2655,17 @@
                             class="sc-jrrXlR fSbdAW categories">Modal verbs</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wo-ist-der-aufzug/l-37476734">
@@ -2347,9 +2675,17 @@
                             class="sc-jrrXlR fSbdAW categories">The dative</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/traumberufe/l-37477568">
@@ -2359,9 +2695,17 @@
                             class="sc-jrrXlR fSbdAW categories">Modal verbs: wollen</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2376,7 +2720,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wo-ist-der-bahnhof/l-37594551">
                         <div class="content">
@@ -2385,9 +2729,17 @@
                             class="sc-jrrXlR fSbdAW categories">Prepositions: bei, von</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/an-der-ampel-links/l-37595076">
@@ -2397,9 +2749,17 @@
                             class="sc-jrrXlR fSbdAW categories">Prepositions of place</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/mit-bus-und-bahn/l-37595395">
@@ -2409,9 +2769,17 @@
                             class="sc-jrrXlR fSbdAW categories">Prepositions: mit</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/im-büro/l-37595501">
@@ -2420,9 +2788,17 @@
                             in the office</span><span class="sc-jrrXlR fSbdAW categories">Two-case prepositions </span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2437,7 +2813,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/lebensmittel/l-37597045">
                         <div class="content">
@@ -2446,9 +2822,17 @@
                             class="sc-jrrXlR fSbdAW categories">Negation: nicht/kein</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ich-mag-nicht/l-37599970">
@@ -2458,9 +2842,17 @@
                             class="sc-jrrXlR fSbdAW categories">Comparative</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/haushaltsarbeit/l-37631238">
@@ -2470,9 +2862,17 @@
                             class="sc-jrrXlR fSbdAW categories">Comparison: wie/als</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/was-macht-dir-spaß/l-37630630">
@@ -2482,9 +2882,17 @@
                             class="sc-jrrXlR fSbdAW categories">gehen + infinitive</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2499,7 +2907,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/mengen-und-preise/l-37628421">
                         <div class="content">
@@ -2508,9 +2916,17 @@
                             class="sc-jrrXlR fSbdAW categories">Prepositions: in, auf</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/was-darf-es-sein/l-37635620">
@@ -2520,9 +2936,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/sonst-noch-etwas/l-37646611">
@@ -2532,9 +2956,17 @@
                             class="sc-jrrXlR fSbdAW categories">Question words: wie viel</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wie-viel-mehl/l-37647289">
@@ -2544,9 +2976,17 @@
                             class="sc-jrrXlR fSbdAW categories">Instructions</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2561,7 +3001,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wie-war-dein-urlaub/l-37648534">
                         <div class="content">
@@ -2570,9 +3010,17 @@
                             class="sc-jrrXlR fSbdAW categories">Present perfect with &quot;haben&quot;</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/jahreszeiten/l-37651758">
@@ -2582,9 +3030,17 @@
                             class="sc-jrrXlR fSbdAW categories">Comparison</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/der-ausflug/l-37651657">
@@ -2594,9 +3050,17 @@
                             class="sc-jrrXlR fSbdAW categories">Present perfect with &quot;sein&quot;</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/wie-wird-das-wetter/l-37653197">
@@ -2606,9 +3070,17 @@
                             class="sc-jrrXlR fSbdAW categories">Pronouns: es</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2623,7 +3095,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/das-ist-jetzt-modern/l-37655848">
                         <div class="content">
@@ -2632,9 +3104,17 @@
                             class="sc-jrrXlR fSbdAW categories">Adjective declension</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/mein-lieblingspulli/l-37656274">
@@ -2644,9 +3124,17 @@
                             class="sc-jrrXlR fSbdAW categories">Question words: welch-</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/das-passt-gut/l-37661740">
@@ -2656,9 +3144,17 @@
                             class="sc-jrrXlR fSbdAW categories">Verbs with a dative object</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/schick/l-37661765">
@@ -2667,9 +3163,17 @@
                             wear</span><span class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2684,7 +3188,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/meine-familie/l-37661741">
                         <div class="content">
@@ -2693,9 +3197,17 @@
                             class="sc-jrrXlR fSbdAW categories">Adjective declension</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/meine-eltern/l-37664246">
@@ -2705,9 +3217,17 @@
                             class="sc-jrrXlR fSbdAW categories">Personal pronouns: accusative</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/meine-tante/l-37664498">
@@ -2717,9 +3237,17 @@
                             class="sc-jrrXlR fSbdAW categories">The possessive determiner</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/mein-bruder/l-37664164">
@@ -2729,9 +3257,17 @@
                             class="sc-jrrXlR fSbdAW categories">Modal verbs: sollen</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2746,7 +3282,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/von-kopf-bis-fuß/l-37664951">
                         <div class="content">
@@ -2755,9 +3291,17 @@
                             class="sc-jrrXlR fSbdAW categories">Comparison</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/bist-du-fit/l-37668333">
@@ -2767,9 +3311,17 @@
                             class="sc-jrrXlR fSbdAW categories">Time specification: Wann ...?</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/fitness/l-37668815">
@@ -2778,9 +3330,17 @@
                             tips</span><span class="sc-jrrXlR fSbdAW categories">Comparison</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ist-das-gesund/l-37670365">
@@ -2790,9 +3350,17 @@
                             class="sc-jrrXlR fSbdAW categories">Imperative: informal</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2807,7 +3375,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/geht-es-dir-gut/l-37778457">
                         <div class="content">
@@ -2816,9 +3384,17 @@
                             class="sc-jrrXlR fSbdAW categories">Müssen or sollen?</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/beim-arzt/l-37778169">
@@ -2828,9 +3404,17 @@
                             class="sc-jrrXlR fSbdAW categories">Modal verbs: dürfen</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/gute-besserung/l-37780308">
@@ -2840,9 +3424,17 @@
                             class="sc-jrrXlR fSbdAW categories">Present perfect</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/nehmen-sie/l-37782214">
@@ -2852,9 +3444,17 @@
                             nach</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2869,7 +3469,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/meine-heimat/l-37776166">
                         <div class="content">
@@ -2878,9 +3478,17 @@
                             class="sc-jrrXlR fSbdAW categories">Adjective declension</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/leben-in-deutschland/l-37777069">
@@ -2890,9 +3498,17 @@
                             class="sc-jrrXlR fSbdAW categories">Personal pronouns: dative</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/anders-als-zu-hause/l-37779968">
@@ -2902,9 +3518,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/ich-träume-von/l-37783730">
@@ -2914,9 +3538,17 @@
                             class="sc-jrrXlR fSbdAW categories">Subjunctive: Wishes</span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
@@ -2931,7 +3563,7 @@
                     <path d="m27 10.5-12 9-12-9" stroke-width="1.5" fill="none" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <ul class="sc-fia-DRh drqBrX collapsed" aria-expanded="false">
+                <ul class="sc-fia-DRh drqBrX" aria-expanded="true">
                   <div class="content">
                     <li><a class="sc-ehYhRg kaMbnh" tabindex="0" href="/en/final-test-a1/l-44875550">
                         <div class="content">
@@ -2940,9 +3572,17 @@
                             class="sc-jrrXlR fSbdAW categories"></span>
                         </div>
                         <div class="progress">
-                          <div class="sc-jWActB borebo" title="Not yet started">
-                            <div class="empty"></div>
+<img alt="Very well finished" class="sc-cNNTdL gUzEwB" src="static/star-gray-c97c98b2.svg"
+                          title="Very well finished" style="height: 16px; width: 16px;">
+
+                          <div class="sc-iCnXOK jzJGdI sc-gCkVGe diBXRP" style="margin-bottom: 6px;">
+                            <span class="good randomPoints" style="color: rgb(99, 222, 157); font-size: 0.83rem; line-height: 1.1;"></span>
+                            <span style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;">/</span>
+                            <span class="outOfPoints" style="font-size: 0.83rem; color: rgb(92, 113, 138); line-height: 1.1;"></span>
                           </div>
+
+                          <button class="sc-ewnqHT gbImKd sc-dicizt llkTjy sc-hCnrGf sc-iWxGtA jUdczE cSbSRN secondary"
+                          data-testid="progressResetButton"><span>Reset</span></button>
                         </div>
                       </a></li>
                   </div>
